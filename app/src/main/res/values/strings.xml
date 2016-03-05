@@ -16,4 +16,5 @@
     <string name="title_activity_google_pay">GooglePayActivity</string>
     <string name="google_pay">Google Pay</string>
     <string name="google_api_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv3FuZ4dz9KPlhkSskX8pzHU8hYtMBZaYPWP6vBkcV8JSYw5AzeObmcc4+QWUqNwCz0yMSnHKKtvoyYJIIXr9TghMyHM3OMo5rMUYQBe9THPr77SWmZ7z+XWVqlLaNNHTHZGT5rMsV2k7mOqIAAO87fydec88RIwmLxOvkYpyh5ILe3hyjvRru3GjUPACulZsLWpk//yLtWwtZ6Im/wssbvv6KhmwM709Ty+9EMRNmj4XKwskY5p7R2xrNE1cjMiR+hL8+P8WUF1fxAh31PowBgu3v3rb06xbYfbh99EGN1pWAG3enq41oCGIF9K0S3c1p1JoM6bgaBEiwxckFzr1iwIDAQAB</string>
+    <string name="list_footer">Developed By : Neeraj Jose</string>
 </resources>
