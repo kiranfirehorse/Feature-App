@@ -9,10 +9,12 @@
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:fullBackupContent="true"
         android:theme="@style/AppTheme">
         <activity android:name=".dashboard.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -33,7 +35,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".dashboard.MainActivity" />
         </activity>
-        <activity android:name=".basicactivityflow.FlowDiagram"/>
+        <activity android:name=".basicactivityflow.FlowDiagram" />
+        <activity
+            android:name=".collapsingscroll.CollapsingActivity"
+            android:label="@string/title_activity_collapsing"
+            android:theme="@style/CollapsingTheme.NoActionBar"
+            android:parentActivityName=".dashboard.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.learn.featureapp.dashboard.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

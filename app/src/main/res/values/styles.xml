@@ -6,7 +6,13 @@
         <item name="android:colorAccent">@color/green</item>
     </style>
 
-    <style name="AppTheme.NoActionBar">
+    <style name="CollapsingTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:colorPrimary">@color/green</item>
+        <item name="android:colorPrimaryDark">@color/dark_green</item>
+        <item name="android:colorAccent">@color/green</item>
+    </style>
+
+    <style name="CollapsingTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>

@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.learn.featureapp.R;
 import com.learn.featureapp.basicactivityflow.FlowDiagram;
+import com.learn.featureapp.collapsingscroll.CollapsingActivity;
 import com.learn.featureapp.googlepay.activities.GooglePayActivity;
 import com.learn.featureapp.navdrawer.NavigationDrawerActivity;
 
@@ -32,6 +33,7 @@ public class MainActivity extends ListActivity {
 
         final List<Demo> demos = Arrays.asList(
                 new Demo(this, FlowDiagram.class, R.string.flow_diagram_title),
+                new Demo(this, CollapsingActivity.class,R.string.collapsing_toolbar),
                 new Demo(this, NavigationDrawerActivity.class, R.string.navigation_drawer),
                 new Demo(this, GooglePayActivity.class, R.string.google_pay));
         ArrayAdapter<Demo> adapter = new ArrayAdapter<>(
