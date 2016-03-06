@@ -11,7 +11,7 @@
         android:layout_alignParentBottom="true"
         android:layout_gravity="center"
         android:text="@string/list_footer"
-        android:textColor="#a1a1a1"
+        android:textColor="@color/gray"
         android:textSize="12sp" />
 
     <ListView
