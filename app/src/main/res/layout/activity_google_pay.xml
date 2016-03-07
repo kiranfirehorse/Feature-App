@@ -22,8 +22,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/product_id_field"
-        android:clickable="true"
-        android:onClick="onClickSubmit"
         android:text="SUBMIT"
         android:textSize="18sp" />
 </RelativeLayout>

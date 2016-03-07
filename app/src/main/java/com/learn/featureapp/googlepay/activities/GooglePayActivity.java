@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -113,9 +112,17 @@ public class GooglePayActivity extends Activity implements IabBroadcastListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_google_pay);
         purchaseItemTextView = (EditText) findViewById(R.id.product_id_field);
+        /**TODOUncomment to start working
 
-        String base64EncodedPublicKey = getString(R.string.google_api_key);
-        initializeHelperClass(base64EncodedPublicKey);
+         Button submitButton = (Button) findViewById(R.id.submit_button);
+         submitButton.setOnClickListener(new View.OnClickListener() {
+        @Override public void onClick(View v) {
+        onClickSubmit();
+        }
+        });
+         String base64EncodedPublicKey = getString(R.string.google_api_key);
+         initializeHelperClass(base64EncodedPublicKey);*/
+
         getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
@@ -167,7 +174,7 @@ public class GooglePayActivity extends Activity implements IabBroadcastListener 
         mHelper.queryInventoryAsync(mGotInventoryListener);
     }
 
-    public void onClickSubmit(View view) {
+    public void onClickSubmit() {
         String itemSku = purchaseItemTextView.getText().toString();
         if (!isPurchased) {
             String payload = "PAYLOAD";
@@ -176,7 +183,7 @@ public class GooglePayActivity extends Activity implements IabBroadcastListener 
             notifyUser(TAG, "You already have purchased");
         }
     }
-    
+
 
     @Override
     public void onDestroy() {
