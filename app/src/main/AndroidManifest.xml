@@ -3,6 +3,7 @@
     package="com.learn.featureapp">
 
     <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -45,7 +46,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.learn.featureapp.dashboard.MainActivity" />
         </activity>
-        <activity android:name=".qrscanner.QRActivity"></activity>
+        <activity android:name=".qrscanner.QRActivity" />
+        <activity
+            android:name=".recycleview.RecycleViewActivity"
+            android:label="@string/title_activity_recycle_view"
+            android:parentActivityName=".dashboard.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.learn.featureapp.dashboard.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

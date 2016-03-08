@@ -16,6 +16,7 @@ import com.learn.featureapp.basicactivityflow.FlowDiagram;
 import com.learn.featureapp.collapsingscroll.CollapsingActivity;
 import com.learn.featureapp.navdrawer.NavigationDrawerActivity;
 import com.learn.featureapp.qrscanner.QRActivity;
+import com.learn.featureapp.recycleview.RecycleViewActivity;
 
 import java.util.Arrays;
 import java.util.List;
@@ -34,6 +35,7 @@ public class MainActivity extends ListActivity {
                 new Demo(this, FlowDiagram.class, R.string.flow_diagram_title),
                 new Demo(this, CollapsingActivity.class, R.string.collapsing_toolbar),
                 new Demo(this, NavigationDrawerActivity.class, R.string.navigation_drawer),
+                new Demo(this, RecycleViewActivity.class, R.string.recycle_view),
                 new Demo(this, QRActivity.class, R.string.qr_scanner));
         ArrayAdapter<Demo> adapter = new ArrayAdapter<>(
                 this,

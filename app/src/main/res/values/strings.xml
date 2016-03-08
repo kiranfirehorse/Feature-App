@@ -111,4 +111,7 @@
     <string name="cover_pic">cover pic</string>
     <string name="qr_scanner">QR Scanner</string>
     <string name="qr_scanner_description_text">This activity scans and shows the data corresponding to the scanned QR code as a toast. It uses an external barcode scanner and reads its output in onActivityResult()</string>
+    <string name="recycle_view">Recycle View</string>
+    <string name="title_activity_recycle_view">RecycleViewActivity</string>
+    <string name="dummy_text">sample text</string>
 </resources>
