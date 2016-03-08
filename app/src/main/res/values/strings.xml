@@ -109,4 +109,6 @@
     </string>
     <string name="collapsing_toolbar">Collapsing Toolbar</string>
     <string name="cover_pic">cover pic</string>
+    <string name="qr_scanner">QR Scanner</string>
+    <string name="qr_scanner_description_text">This activity scans and shows the data corresponding to the scanned QR code as a toast. It uses an external barcode scanner and reads its output in onActivityResult()</string>
 </resources>
